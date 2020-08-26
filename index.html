@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="We offer a world-class international library of civics courses and lessons about government, politics, law, and more! Click today to see what we offer.">
+	<meta name="keywords" content="Education, Lessons, Civics, Politics, Government, US, United States, International, Relations, Comparative, Congress, President, Tutoring, Tutor, Class, Court, Judicial, Legislative, Executive, Constitution, History, Economics, Philosophy, Social, Study, Studies, Science, AP, College, High School">
+	<meta name="author" content="Aris Wertin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Global Civics Education</title>
+<style>
+.searchbox {
+	width: 100%;
+	height: calc(100vh - 60px);
+	background-image: url("Resources/homebackground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.searchbox .search {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 40, 104, 0.6);
+	border: none;
+	width: 750px;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 5px;
+}
+
+.searchinput {
+	width: 80%;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 20px;
+	z-index: 1;
+}
+
+.searchclick {
+	position: relative;
+	cursor: pointer;
+	padding: 10px auto;
+	font-size: 20px;
+	width: 15%;
+	background: #bd0b23;
+	text-align: center;
+	color: white;
+	z-index: 2;
+}
+.featured {
+	width: 100%;
+	height: auto;
+	padding: 2% 0 0 1%;
+	color: black;
+	background-color: #c9c9c9;
+	margin-top: 0;
+}
+
+.featured .ftitle {
+	font-size: 50px;
+	padding-left: 1%;
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	height: auto;
+	margin-bottom: 0;
+}
+
+.mySlides {
+	display: none;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 0;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+	color: #ffffff;
+	background-color: #000000;
+	font-size: 25px;
+	padding: 8px 12px;
+	position: inline;
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+	transform: translateY(-5px);
+}
+
+.dot {
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	margin-bottom: 1%
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@media (max-width: 900px) {
+	.searchbox .search {
+		width: 650px;
+	}
+}
+
+@media (max-width: 800px) {
+	.searchbox .search {
+		width: 550px;
+	}
+}
+
+@media (max-width: 700px) {
+	.searchbox .search {
+		width: 450px;
+	}
+	
+	.searchclick {
+		font-size: 16px;
+	}
+	
+	.prev, .next {
+		top: 45%
+	}
+}
+
+@media (max-width: 600px) {
+	.searchbox .search {
+		width: 350px;
+	}
+	
+	.searchclick {
+		font-size: 12px;
+	}
+	
+	.prev, .next {
+		top: 40%
+	}
+}
+
+@media (max-width: 500px) {
+	.searchbox .search {
+		display: none;
+	}
+	
+	.prev, .next {
+		top: 35%
+	}
+}
+</style>
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta http-equiv="refresh" content="180">
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fa fa-bars"></i>
+		</label>
+		<label class="name">Global Civics Education</label>
+		<ul class="navmenu">
+			<li><a class="active" href="https://www.globalcivicseducation.org">Home</a>
+			<li><a href="courses">Courses</a>
+			<li><a href="donate">Donate</a> 
+			<li><a href="teach">For Teachers</a>
+		</ul>
+	</div>
+	<div class="wrapper">
+		<div class="searchbox">
+			<div class="search">
+				<input type="text" placeholder="Search..." class="searchinput">
+				<button class="searchclick">Search</button>
+			</div>
+		</div>
+		<div class="featured">
+			<h2 class="ftitle"><strong>Featured Courses</strong></h2>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<a href="course/introduction_to_political_science"><img src="Resources/introtopoliscisplash.jpg" style="width: 100%"></a>
+					<div class="text">Introduction to Political Science</div>
+				</div>
+				<div class="mySlides fade">
+					<a href="course/us_government_and_politics"><img src="Resources/usgovsplash.jpg" style="width: 100%"></a>
+					<div class="text">US Government and Politics</div>
+				</div>
+				<div class="mySlides fade">
+					<a href="course/comparative_government_and_politics"><img src="Resources/compgovsplash.jpg" style="width: 100%"></a>
+					<div class="text">Comparative Government and Politics</div>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<div style="text-align: center">
+				<span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		
+	</div>
+</body>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " active";
+}
+</script>
+</html>

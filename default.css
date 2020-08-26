@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Roboto Slab', serif;
+}
+
+.topnav {
+	background-color: #002868;
+	height: 60px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 5;
+	top: 0;
+	position: sticky;
+}
+
+label.name {
+	color: white;
+	font-size: 35px;
+	line-height: 60px;
+	padding: 0 20px;
+	font-weight: bold;
+}
+
+.navmenu {
+	float: right;
+}
+
+.navmenu li {
+	display: inline-block;
+}
+
+.navmenu li a {
+	color: white;
+	text-align: center;
+	padding: 18px 20px;
+	font-size: 20px;
+	display: block;
+	height: 100%;
+}
+
+.navmenu a.active {
+	background-color: #bd0b23;
+	color: white;
+}
+
+.navmenu a:hover {
+	background-color: #ffffff;
+	color: black;
+	transition: .5s;
+}	
+
+.checkbtn {
+	font-size: 30px;
+	color: #ffffff;
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.wrapper {
+	height: auto;
+}
+
+.sticky+.wrapper {
+	padding-top: 60px;
+}
+
+.footer {
+	width: 100%;
+	position: relative;
+	width: 100%;
+	height: 15vh;
+	background-color: #002868;
+	color: white;
+	bottom: 0;
+	display: block;
+}
+
+@media (max-width: 906px) {
+	.checkbtn {
+		display: block;
+	}
+	
+	.navmenu {
+		position: fixed;
+		width: 100%;
+		height: auto;
+		background: #002868;
+		top: 60px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		z-index: 5;
+	}
+	
+	.navmenu li {
+		display: block;
+	}
+	
+	.navmenu li a {
+		font-size: 20px;
+	}
+	
+	#check:checked ~ .navmenu {
+		left: 0;
+	}
+}
+
+@media (max-width: 496px) {
+	label.name {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 328px) {
+	label.name {
+		display: none;
+	}
+}
